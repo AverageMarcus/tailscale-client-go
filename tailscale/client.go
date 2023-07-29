@@ -598,12 +598,12 @@ type (
 
 	// The Key type describes an authentication key within the tailnet.
 	Key struct {
-		ID           string          `json:"id"`
-		Key          string          `json:"key"`
-		Description  string          `json:"description"`
-		Created      time.Time       `json:"created"`
-		Expires      time.Time       `json:"expires"`
-		Capabilities KeyCapabilities `json:"capabilities"`
+		ID           string           `json:"id"`
+		Key          string           `json:"key"`
+		Description  string           `json:"description"`
+		Created      time.Time        `json:"created"`
+		Expires      time.Time        `json:"expires"`
+		Capabilities *KeyCapabilities `json:"capabilities,omitempty"`
 	}
 )
 

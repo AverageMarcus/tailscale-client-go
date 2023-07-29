@@ -655,7 +655,7 @@ func TestClient_CreateKey(t *testing.T) {
 		Key:          "thisisatestkey",
 		Created:      time.Date(2021, 1, 1, 0, 0, 0, 0, time.UTC),
 		Expires:      time.Date(2021, 1, 1, 0, 0, 0, 0, time.UTC),
-		Capabilities: capabilities,
+		Capabilities: &capabilities,
 		Description:  "",
 	}
 
@@ -691,7 +691,7 @@ func TestClient_CreateKeyWithExpirySeconds(t *testing.T) {
 		Key:          "thisisatestkey",
 		Created:      time.Date(2021, 1, 1, 0, 0, 0, 0, time.UTC),
 		Expires:      time.Date(2021, 1, 1, 0, 0, 0, 0, time.UTC),
-		Capabilities: capabilities,
+		Capabilities: &capabilities,
 		Description:  "",
 	}
 
@@ -727,7 +727,7 @@ func TestClient_CreateKeyWithDescription(t *testing.T) {
 		Key:          "thisisatestkey",
 		Created:      time.Date(2021, 1, 1, 0, 0, 0, 0, time.UTC),
 		Expires:      time.Date(2021, 1, 1, 0, 0, 0, 0, time.UTC),
-		Capabilities: capabilities,
+		Capabilities: &capabilities,
 		Description:  "key description",
 	}
 
@@ -762,7 +762,7 @@ func TestClient_GetKey(t *testing.T) {
 		ID:           "test",
 		Created:      time.Date(2021, 1, 1, 0, 0, 0, 0, time.UTC),
 		Expires:      time.Date(2021, 1, 1, 0, 0, 0, 0, time.UTC),
-		Capabilities: capabilities,
+		Capabilities: &capabilities,
 		Description:  "",
 	}
 
